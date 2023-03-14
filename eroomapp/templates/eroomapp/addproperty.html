@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+      #header
+      {
+         text-align: center;
+         color: white;
+         height:pink;
+         width:100%;
+         background-color:black;
+         text-decoration: none;
+
+         
+      }
+    
+        #middel
+        {
+           text-align: center;
+           color: white;
+           height:pink;
+           width:100%;
+           background-color:black;
+           
+        }
+
+      </style>
+
+</head>
+<body>
+    <center>
+      <div id="header">
+        <a href="sbp"><font color="white" font size="4">check book property </font></a></pre>
+        <form action="insertProperty" method="post">
+            {% csrf_token %}
+            Category:<input type="text" name="txtt" placeholder="Category" required/><br><br>
+            Rent:<input type="text" name="txtd" placeholder="Rent" required/><br><br>
+            Location:<input type="text" name="txte" placeholder="Location" required/><br><br>
+            description:<input type="text" name="txtte" placeholder="description"required /><br><br>
+            <input type="submit"name="btnsubmit" value="Addproperty"/>
+            <br><br>
+        </form>
+      </div>
+    </center>
+</body>
+</html>

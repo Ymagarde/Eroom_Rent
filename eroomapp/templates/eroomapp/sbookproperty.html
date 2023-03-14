@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        #header
+        {
+           text-align: left;
+           color: white;
+           height:pink;
+           width:100%;
+           background-color:black;
+           
+        }
+        </style>
+</head>
+<body>
+    <div id="header">
+        <a href="Logout"><font color="white" font size="5">Logout</font></a>
+        </div>
+      
+        
+        
+    
+    <center> <table border="1">
+            <tr>
+                <th>Name</th><th>emailid</th><th>bookid</th><th>mobile</th><th>Date</th><th>Category</th>
+            </tr>
+            {% for d1 in res2 %}
+            <tr>
+                <td>{{d1.name}}</td><td>{{d1.emailid}}</td><td>{{d1.bookid}}</td><td>{{d1.mobile}}</td><td>{{d1.date}}</td><td>{{d1.Category}}</td>
+                </tr>
+            {% endfor %}
+ 
+</center>
+</form>
+
+</body>
+</html>

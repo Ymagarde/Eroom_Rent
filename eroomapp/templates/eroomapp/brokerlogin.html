@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        #header
+        {
+        
+         height: 50px;;
+           width: 100;
+           background-color:black;
+           text-decoration: none;
+           padding: 5px 5px 5px;
+        }
+    #middlepart1
+        {
+            background-image:url("/static/image/hrlogin.jpg" ) ;
+            background-repeat: no-repeat;
+            width: 90%;
+            height: 700px;
+            text-align: 60px;
+           
+        }
+    </style>
+
+</head>
+<body bgcolor="#fa1be0">
+    <div id="header">
+    <a href="dash"><font color="white" font size="3">HOME</font></a>
+    <a href=" brokerreg"><font color="white" font size="4">Register</font></a></pre>
+    </div>
+    <center>
+    <div id="middlepart1">
+    <h2>Broker Login Form Here</h2></font>
+    <form action="brokerlogin" method="post">
+    {% csrf_token %}
+<font color="" font size="5">
+     <pre>
+        <br>
+   Email:<input type="email" name="emailid" placeholder="enter email" value="{{ucookie}}" required/><br>
+Password:<input type="password" name="password" placeholder="enter password" value="{{pcookie}}" required/><br>
+    <input type="checkbox" name="chk" value="rem"{% if ucookie %} checked {% endif %}/>Remember Me<br>
+    <input type="submit"name="btnsubmit" value="continue"/>
+    </pre>
+</font>
+    </form>
+    </div>
+    </center>
+</body>
+</html>

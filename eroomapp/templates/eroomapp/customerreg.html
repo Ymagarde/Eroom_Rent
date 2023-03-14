@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+      #header
+      {
+      
+       height: 50px;;
+         width: 100;
+         background-color:black;
+         text-decoration: none;
+      }
+      #middlepart1
+        {
+            
+          background-image:url("/static/image/hrreg.png") ;
+          background-repeat: repeat;
+          height: 600px;
+          width: 100%;
+        }
+      </style>
+</head>
+<body backgroundcolor="red">
+  <form action=" " method="post">
+    {% csrf_token %}
+    <div id="header">
+      <a href="dash"><font color="white" font size="3">HOME</font></a>
+      <a href="login"><font color="white" font size="4">login</font></a></pre>
+      </div>
+  <div id="middlepart1">
+    <center><font color="black" font size="5">Customer Register Here</font></center><br>
+
+    <center>
+    Email:<input type="email" name="email" placeholder="enter email" required/><br><br>
+          Password:<input type="password" name="password" placeholder="enter password" required/><br><br>
+            Mobile:<input type="number" name="mobile" placeholder="enter mobileno" required/><br><br>
+            Address:<input type="txt" name="Address" placeholder="enter Address" required/><br><br>
+           <input type="submit"name="btnsubmit" value="submit"/>
+          </center>
+          </div>
+</form>
+</body>
+</html>
